@@ -1,0 +1,79 @@
+.header-burger {
+    display: none;
+}
+
+.header-left-arrow {
+    border-top: 2px solid var(--black);
+    border-left: 2px solid var(--black);
+    transform: rotateZ(-45deg);
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    cursor: pointer;
+    display: none;
+}
+
+.theme-title.active {
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.theme-title {
+    visibility: hidden;
+    transform: translateY(-20px);
+    opacity: 0;
+    position: absolute;
+    padding: 8px;
+    background-color: var(--white);
+    border-radius: 8px;
+    right: 0;
+    margin-top: 10px;
+    width: max-content;
+    transition: .2s ease;
+}
+
+.theme-drop-down {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    height: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 5px;
+    top: 100%;
+    right: 0;
+    width: 0;
+    z-index: 1000;
+    transition: all .4s ease;
+}
+
+.theme-drop-down .drop-down {
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.theme-drop-down .drop-down:hover {
+    background-color: #F43F5E;
+}
+
+.theme-drop-down.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    height: max-content;
+    width: max-content;
+    transition: .4s ease;
+}
+
+.theme-drop-down img {
+    display: block;
+    margin-right: 10px;
+    width: 24px;
+    cursor: pointer;
+}

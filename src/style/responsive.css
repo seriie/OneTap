@@ -1,0 +1,44 @@
+@media only screen and (max-width: 1017px) {
+    .header-burger {
+        display: block !important;
+    }
+
+    .header-app .header-left-arrow {
+        display: block !important;
+    }
+
+    .header-app {
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        justify-content: space-between !important;
+        flex-direction: column;
+        width: 0 !important;
+        overflow: hidden;
+        visibility: hidden;
+        opacity: 0;
+        transition: .4s ease;
+    }
+
+    .header-app.active {
+        visibility: visible;
+        width: 200px !important;
+        opacity: 1;
+    }
+
+    .header-app .nav ul {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .header-app .theme-drop-down {
+        margin-top: -150px;
+        margin-left: -50px;
+        inset: 0;
+    }
+
+    .header-app .theme-title {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+:root {
+  --black: #020617;
+  --semi_black: #0F172A;
+  --white: #F8FAFC;
+  --semi_white: #F1F5F9;
+  --grey_light: #E2E8F0;
+  --darker: #1E293B;
+  --semi_darker: #64748B;
+  --pseudo: #0EA5E9;
+}
+
+* {
+  font-family: 'Poppins';
+}
+
+body {
+  margin: 0;
+  padding: 40px 50px;
+  background-color: var(--semi_white);
+}

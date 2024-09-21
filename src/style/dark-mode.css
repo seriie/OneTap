@@ -1,0 +1,66 @@
+body.dark-mode {
+    background-color: #020617;
+}
+
+.dark-mode .header-app {
+    background-color: #0F172A;
+}
+
+.dark-mode .header-burger {
+    color: var(--white);
+}
+
+.dark-mode .header-app .header-left-arrow {
+    border-color: var(--white);
+}
+
+.dark-mode .header-app-logo {
+    color: var(--white);
+}
+
+.dark-mode .header-app .nav ul li a {
+    color: var(--white);
+}
+
+.dark-mode .header-app .nav ul li a:hover {
+    color: var(--pseudo);
+}
+
+.dark-mode .theme-icon {
+    filter: invert(92%) sepia(0%) saturate(100%) hue-rotate(180deg);
+}
+
+.dark-mode .theme-title {
+    background-color: var(--darker);
+    color: var(--white);
+}
+
+.dark-mode .theme-drop-down {
+    background-color: var(--darker);
+}
+
+.dark-mode .theme-drop-down .drop-down {
+    filter: invert(92%) sepia(0%) saturate(100%) hue-rotate(180deg);
+}
+
+.dark-mode .content-app .left .text {
+    color: var(--white);
+}
+
+.dark-mode .content-app .left .content-button {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.dark-mode .content-app .left .content-button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.dark-mode .content-app .right img {
+    filter: invert(92%);
+}
+
+.dark-mode .about-app {
+    color: var(--white);
+}

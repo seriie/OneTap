@@ -1,0 +1,17 @@
+.content-app {
+    flex-wrap: wrap-reverse;
+}
+
+.content-app .left .onetap:focus {
+    outline: none;
+}
+
+.content-app .left .content-button {
+    transition: .2s ease-in-out;
+}
+
+.content-app .left .content-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+    transform: translateY(-5px);
+}
