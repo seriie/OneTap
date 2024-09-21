@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import moon from '../../assets/icon/moon.svg';
 import sun from '../../assets/icon/sun.svg';
 import system from '../../assets/icon/system.svg';
+import logo from '../../assets/images/onetap.png'
 import './header.css';
 
 export default function Header() {
@@ -115,10 +116,10 @@ export default function Header() {
     return (
         <>
             <div className='header-burger text-4xl top-0 left-0 m-[10px] cursor-pointer fixed'>&#9776;</div>
-            <div className="header-app shadow-smooth rounded-[10px] bg-slate-50 w-full flex p-[20px] items-center justify-between">
+            <div className="header-app z-10 shadow-smooth rounded-[10px] bg-slate-50 w-full flex p-[20px] items-center justify-between">
                 <div className='header-left-arrow'></div>
-                <div className="header-app-logo text-slate-950 text-5xl cursor-pointer" onClick={location.reload}>
-                    OneTap
+                <div className="header-app-logo flex items-center text-slate-950 text-5xl cursor-pointer" onClick={location.reload}>
+                    <img className='onetap-logo w-[50px]' src={logo}></img>neTap
                 </div>
                 <div className="nav">
                     <ul className='flex gap-20'>

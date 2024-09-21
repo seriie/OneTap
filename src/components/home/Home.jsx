@@ -11,8 +11,8 @@ export default function Home() {
                         Get Started
                     </button>
                 </div>
-                <div className='right'>
-                    <img className='w-[500px]' src={logo}></img>
+                <div className='right z-0'>
+                    <img className='w-[500px] z-0' src={logo}></img>
                 </div>
             </div>
         </>

@@ -6,6 +6,10 @@ body.dark-mode {
     background-color: #0F172A;
 }
 
+.dark-mode .header-app .header-app-logo .onetap-logo {
+    filter: invert(92%);
+}
+
 .dark-mode .header-burger {
     color: var(--white);
 }
