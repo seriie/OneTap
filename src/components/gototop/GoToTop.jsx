@@ -22,9 +22,9 @@ export default function GoToTop() {
         
         document.addEventListener('scroll', function() {
             if (window.scrollY > 200) {
-                goToTop.style.visibility = "visible";
+                goToTop.style.display = "block";
             } else {
-                goToTop.style.visibility = "hidden";
+                goToTop.style.display = "none";
             }
         });
     });

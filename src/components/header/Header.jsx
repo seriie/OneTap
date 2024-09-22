@@ -80,6 +80,38 @@ export default function Header({ themeIcon, themeTitle, handleThemeChange }) {  
         });
     }, []);
 
+    useEffect(() => {
+        document.querySelectorAll('a[href^="#about"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth', block: 'center', inline: 'start'
+                });
+            });
+        });
+        
+        document.querySelectorAll('a[href^="#product"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth', block: 'end', inline: 'start'
+                });
+            });
+        });
+
+        document.querySelectorAll('a[href^="#help"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth', block: 'end', inline: 'start'
+                });
+            });
+        });
+    });
+
     return (
         <>
             <div className='header-burger text-4xl top-0 left-0 m-[10px] cursor-pointer fixed'>&#9776;</div>
