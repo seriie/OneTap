@@ -122,3 +122,7 @@ body.dark-mode {
     background-color: var(--white);
     color: var(--black);
 }
+
+.dark-mode .go-to-top .arrow {
+    filter: none;
+}

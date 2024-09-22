@@ -11,6 +11,7 @@ import Product from './components/product/Product';
 import Help from './components/help/Help';
 import Footer from './components/footer/Footer';
 import CursorCustom from './components/cursor_custom/CursorCustom';
+import GoToTop from './components/gototop/GoToTop';
 import moon from './assets/icon/moon.svg';
 import sun from './assets/icon/sun.svg';
 import system from './assets/icon/system.svg';
@@ -93,6 +94,7 @@ function App() {
         </div>
         <Help />
         <Footer />
+        <GoToTop />
     </>
   )
 }
