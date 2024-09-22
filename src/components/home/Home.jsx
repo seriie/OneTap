@@ -12,7 +12,7 @@ export default function Home() {
                     </button>
                 </div>
                 <div className='right z-0'>
-                    <img className='w-[500px] z-0' src={logo}></img>
+                    <img className='logo w-[500px] z-0' src={logo}></img>
                 </div>
             </div>
         </>

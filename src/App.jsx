@@ -6,6 +6,8 @@ import Header from './components/header/Header';
 import StickyHeader from './components/stickyheader/StickyHeader';
 import Home from './components/home/Home';
 import About from './components/about/About';
+import products from './components/product/product_data/ProductData';
+import Product from './components/product/Product';
 import moon from './assets/icon/moon.svg';
 import sun from './assets/icon/sun.svg';
 import system from './assets/icon/system.svg';
@@ -14,7 +16,6 @@ function App() {
   const [themeIcon, setThemeIcon] = useState(moon);
   const [themeTitle, setThemeTitle] = useState('');
 
-  // Fungsi untuk mengaplikasikan mode tema (dark, light, system)
   const applyDarkMode = (mode) => {
       const bodyClass = document.body.classList;
 
@@ -35,12 +36,10 @@ function App() {
       }
   };
 
-  // Fungsi untuk menyimpan tema ke localStorage
   const saveThemeToLocalStorage = (theme) => {
       localStorage.setItem('theme', theme);
   };
 
-  // Fungsi yang akan menangani perubahan tema
   const handleThemeChange = (theme) => {
       if (theme === 'light') {
           setThemeIcon(sun);
@@ -55,7 +54,6 @@ function App() {
       saveThemeToLocalStorage(theme);
   };
 
-  // Pada saat pertama kali render, baca tema dari localStorage
   useEffect(() => {
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
@@ -78,6 +76,17 @@ function App() {
       />
       <Home />
       <About />
+      <div className='all-products flex flex-wrap gap-10'>
+        {products.map((product, index) => (
+              <Product
+                  key={index}
+                  productName={product.productName}
+                  productImage={product.productImage}
+                  productDescription={product.productDescription}
+                  productPrice={product.productPrice}
+              />
+        ))}
+      </div>
     </>
   )
 }

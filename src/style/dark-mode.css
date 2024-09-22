@@ -42,6 +42,10 @@ body.dark-mode {
     color: var(--pseudo);
 }
 
+.dark-mode .sticky-header-app .nav ul li a:hover {
+    color: var(--pseudo);
+}
+
 .dark-mode .theme-icon {
     filter: invert(92%) sepia(0%) saturate(100%) hue-rotate(180deg);
 }
@@ -84,4 +88,29 @@ body.dark-mode {
 
 .dark-mode .about-app {
     color: var(--white);
+}
+
+.dark-mode .about-app .right .about-images {
+    border: 1px solid var(--white);
+}
+
+.dark-mode .products-app .product-card {
+    border-color: var(--semi_white);
+}
+
+.dark-mode .product-card .buy {
+    background-color: #f1f5f9a4;
+    color: var(--semi_darker);
+}
+
+.dark-mode .product-card .product-name {
+    color: var(--white);
+}
+
+.dark-mode .product-card .description {
+    color: #CBD5E1;
+}
+
+.dark-mode .product-card .price {
+    color: var(--semi_white);
 }
