@@ -1,7 +1,7 @@
 export default function Product({ productName, productImage, productDescription, productPrice }) {
     return (
         <>
-        <div className="products-app flex flex-wrap justify-center">
+        <div id="product" className="products-app flex flex-wrap justify-center">
             <div className="product-card cursor-pointer border border-slate-700 rounded-xl p-4 m-4 max-w-xs relative">
                 <div className="buy absolute inset-0 flex items-center justify-center bg-slate-500 bg-opacity-80 text-white text-[50px] opacity-0 hover:opacity-100 hover:rounded-xl transition-opacity duration-300">
                     Buy
