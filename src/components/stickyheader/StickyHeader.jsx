@@ -96,7 +96,6 @@ export default function StickyHeader({ themeIcon, themeTitle, handleThemeChange 
                        <li><a className='text-[20px] text-slate-950 hover:text-sky-400 transition-color duration-100' href="#about">About</a></li>
                        <li><a className='text-[20px] text-slate-950 hover:text-sky-400 transition-color duration-100' href="#product">Product</a></li>
                        <li><a className='text-[20px] text-slate-950 hover:text-sky-400 transition-color duration-100' href="#help">Help</a></li>
-                       <li><a className='text-[20px] text-slate-950 hover:text-sky-400 transition-color duration-100' href="#more">More</a></li>
                     </ul>
                 </div>
                 <div className="theme relative">

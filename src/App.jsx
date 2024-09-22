@@ -8,6 +8,9 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import products from './components/product/product_data/ProductData';
 import Product from './components/product/Product';
+import Help from './components/help/Help';
+import Footer from './components/footer/Footer';
+import CursorCustom from './components/cursor_custom/CursorCustom';
 import moon from './assets/icon/moon.svg';
 import sun from './assets/icon/sun.svg';
 import system from './assets/icon/system.svg';
@@ -64,29 +67,32 @@ function App() {
   }, [])
   return (
     <>
-      <Header 
-        themeIcon={themeIcon}
-        themeTitle={themeTitle}
-        handleThemeChange={handleThemeChange}
+        <CursorCustom />
+        <Header 
+          themeIcon={themeIcon}
+          themeTitle={themeTitle}
+          handleThemeChange={handleThemeChange}
+          />
+        <StickyHeader 
+          themeIcon={themeIcon}
+          themeTitle={themeTitle}
+          handleThemeChange={handleThemeChange}
         />
-      <StickyHeader 
-        themeIcon={themeIcon}
-        themeTitle={themeTitle}
-        handleThemeChange={handleThemeChange}
-      />
-      <Home />
-      <About />
-      <div className='all-products flex flex-wrap gap-10'>
-        {products.map((product, index) => (
-              <Product
-                  key={index}
-                  productName={product.productName}
-                  productImage={product.productImage}
-                  productDescription={product.productDescription}
-                  productPrice={product.productPrice}
-              />
-        ))}
-      </div>
+        <Home />
+        <About />
+        <div className='all-products flex flex-wrap gap-10'>
+          {products.map((product, index) => (
+                <Product
+                    key={index}
+                    productName={product.productName}
+                    productImage={product.productImage}
+                    productDescription={product.productDescription}
+                    productPrice={product.productPrice}
+                />
+          ))}
+        </div>
+        <Help />
+        <Footer />
     </>
   )
 }

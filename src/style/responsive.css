@@ -53,4 +53,12 @@
     .header-app .theme-title {
         display: none;
     }
+
+    .about-app .right {
+        max-width: 300px !important;
+    }
+
+    .about-app .left {
+        margin-top: 100px;
+    }
 }

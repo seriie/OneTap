@@ -1,0 +1,8 @@
+.contact-us-button {
+    transition: .3s ease;
+}
+
+.contact-us-button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}

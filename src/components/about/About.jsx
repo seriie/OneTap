@@ -21,11 +21,11 @@ export default function About() {
             const randomImages = Math.floor(Math.random() * images.length);
     
             image.src = images[randomImages];
-        }, 1000);
+        }, 2000);
     });
 
     return (
-        <div id='about' className="about-app m-auto flex flex-wrap justify-between items-center p-8">
+        <div id='about' className="about-app mt-[200px] flex flex-wrap flex-wrap-reverse justify-between items-center p-8">
             <div className='left max-w-[500px]'>
                 <h1 className="text-5xl text-center mb-4">About OneTap</h1>
                 <p className="text-xl text-center mb-6">
@@ -39,7 +39,7 @@ export default function About() {
                 </p>
             </div>
             <div className='right'>
-                <img className='about-images border-solid border-slate-900 border p-[20px] rounded-[5px] max-w-[400px]' src=""></img>
+                <img className='about-images border-solid border-slate-900 border p-[20px] rounded-[5px] w-[400px]' src={shirt}></img>
             </div>
         </div>
     );

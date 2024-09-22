@@ -98,11 +98,6 @@ body.dark-mode {
     border-color: var(--semi_white);
 }
 
-.dark-mode .product-card .buy {
-    background-color: #f1f5f9a4;
-    color: var(--semi_darker);
-}
-
 .dark-mode .product-card .product-name {
     color: var(--white);
 }
@@ -113,4 +108,17 @@ body.dark-mode {
 
 .dark-mode .product-card .price {
     color: var(--semi_white);
+}
+
+.dark-mode .help-app {
+    color: var(--white);
+}
+
+.dark-mode .help-app .contact-us-button {
+    border-color: var(--white);
+}
+
+.dark-mode .help-app .contact-us-button:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
