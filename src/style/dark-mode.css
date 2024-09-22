@@ -6,7 +6,15 @@ body.dark-mode {
     background-color: #0F172A;
 }
 
+.dark-mode .sticky-header-app {
+    background-color: #0F172A;
+}
+
 .dark-mode .header-app .header-app-logo .onetap-logo {
+    filter: invert(92%);
+}
+
+.dark-mode .sticky-header-app .header-app-logo .onetap-logo {
     filter: invert(92%);
 }
 
@@ -26,6 +34,10 @@ body.dark-mode {
     color: var(--white);
 }
 
+.dark-mode .sticky-header-app .nav ul li a {
+    color: var(--white);
+}
+
 .dark-mode .header-app .nav ul li a:hover {
     color: var(--pseudo);
 }
@@ -35,8 +47,13 @@ body.dark-mode {
 }
 
 .dark-mode .theme-title {
-    background-color: var(--darker);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.dark-mode .sticky-header-theme-title {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 .dark-mode .theme-drop-down {

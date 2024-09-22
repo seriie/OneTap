@@ -7,6 +7,10 @@
         display: block !important;
     }
 
+    .sticky-header-app {
+        display: none !important;
+    }
+
     .header-app {
         position: fixed;
         left: 0;
@@ -25,6 +29,14 @@
         visibility: visible;
         width: 200px !important;
         opacity: 1;
+    }
+
+    .header-app .header-app-logo .onetap-logo {
+        width: 30px !important;
+    }
+
+    .header-app .header-app-logo .netap {
+        font-size: 40px;
     }
 
     .header-app .nav ul {
