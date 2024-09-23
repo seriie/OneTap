@@ -14,21 +14,22 @@ export default function Loading() {
         const interval = setInterval(() => {
 
         if (percent < 100) {
-          percent += 1;
-          setPercentage(percent);
-          body.classList.add('active');
+            scrollTo(0,0);
+            percent += 1;
+            setPercentage(percent);
+            body.classList.add('active');
         } else {
-          clearInterval(interval);
-          setIsLoading(false);
-          body.classList.remove('active');
+            clearInterval(interval);
+            setIsLoading(false);
+            body.classList.remove('active');
         }
       }, 10);
     };
 
     updatePercentage();
 
-
     return () => clearInterval(updatePercentage);
+
   }, []);
 
   return (
