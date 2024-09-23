@@ -38,6 +38,7 @@ export default function Loading() {
         <div className="percent">
           <span>{percentage}%</span>
         </div>
+        <div className="loading-text absolute text-slate-100 font-bold text-2xl bottom-[200px]">Loading...</div>
       </div>
     )
   );
