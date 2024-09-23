@@ -1,3 +1,7 @@
 * {
     cursor: none !important;
 }
+
+.cursor {
+    display: none;
+}

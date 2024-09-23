@@ -3,6 +3,7 @@ import './cursor_custom.css';
 
 export default function CursorCustom() {
     useEffect(() => {
+        const cursor = document.querySelector('.cursor');
         const dot = document.querySelector('.cursor .dot');
         const circle = document.querySelector('.cursor .circle');
 
@@ -14,13 +15,11 @@ export default function CursorCustom() {
         });
 
         document.addEventListener('mouseleave', function() {
-            dot.style.display = 'none';
-            circle.style.display = 'none';
+            cursor.style.display = "none";
         });
-
-        document.addEventListener('mouseenter', function() {
-            dot.style.display = 'block';
-            circle.style.display = 'block';
+        
+        document.addEventListener('mousemove', function() {
+            cursor.style.display = "block";
         });
     });
 
