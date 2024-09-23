@@ -27,7 +27,7 @@ export default function Help() {
                             <strong>How can I contact OneTap?</strong> - You can reach us at 
                             <button 
                                 onClick={handleHelpClick} 
-                                className="contact-us-button px-[12px] py-[8px] focus:outline-none ml-[20px] rounded-md border-solid border-[1px] border-slate-900 transition">
+                                className="contact-us-button triggered-hover px-[12px] py-[8px] focus:outline-none ml-[20px] rounded-md border-solid border-[1px] border-slate-900 transition">
                                 Here
                             </button>
                         </li>

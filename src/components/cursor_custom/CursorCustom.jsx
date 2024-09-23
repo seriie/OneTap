@@ -3,6 +3,8 @@ import './cursor_custom.css';
 
 export default function CursorCustom() {
     useEffect(() => {
+        const triggeredHover = document.querySelectorAll('.triggered-hover');
+        console.log(triggeredHover);
         const cursor = document.querySelector('.cursor');
         const dot = document.querySelector('.cursor .dot');
         const circle = document.querySelector('.cursor .circle');
@@ -20,6 +22,16 @@ export default function CursorCustom() {
         
         document.addEventListener('mousemove', function() {
             cursor.style.display = "block";
+        });
+
+        triggeredHover.forEach(triggeredHover => {
+            triggeredHover.addEventListener('mouseenter', function() {
+                circle.classList.add('active');
+            });
+
+            triggeredHover.addEventListener('mouseleave', function() {
+                circle.classList.remove('active');
+            });
         });
     });
 

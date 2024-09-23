@@ -31,7 +31,7 @@ export default function GoToTop() {
 
     return (
         <>
-            <div className='go-to-top hidden'>
+            <div className='go-to-top triggered-hover hidden'>
                 <img className='arrow p-0 fixed z-[100] right-5 bottom-5 invert-[92%] w-[60px] rounded-full bg-slate-50' src={arrow} alt="Go to top" />
             </div>
         </>

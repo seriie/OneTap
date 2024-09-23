@@ -7,7 +7,7 @@ export default function Product({ productName, productImage, productDescription,
                 <h2 className="product-name text-lg font-semibold mt-4">{productName}</h2>
                 <p className="description text-gray-600 mt-2">{productDescription}</p>
                 <h3 className="price text-xl font-bold mt-4">{productPrice}</h3>
-                <button className="product-button px-[12px] py-[6px] bg-sky-500 rounded-sm absolute right-5 bottom-5 text-slate-200">Buy</button>
+                <button className="product-button triggered-hover px-[12px] py-[6px] bg-sky-500 rounded-sm absolute right-5 bottom-5 text-slate-200">Buy</button>
             </div>
         </div>
         </>
