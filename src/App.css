@@ -21,3 +21,7 @@ body {
   background-color: var(--semi_white);
   overflow-x: hidden;
 }
+
+body.active {
+  overflow: hidden;
+}

@@ -24,6 +24,10 @@ export default function CursorCustom() {
             cursor.style.display = "block";
         });
 
+        if(window.innerWidth < 900) {
+            cursor.style.display = "none";
+        }
+
         triggeredHover.forEach(triggeredHover => {
             triggeredHover.addEventListener('mouseenter', function() {
                 circle.classList.add('active');
@@ -33,6 +37,10 @@ export default function CursorCustom() {
                 circle.classList.remove('active');
             });
         });
+        
+        if(window.innerWidth < 600) {
+            circle.classList.remove('active');
+        }
     });
 
     return (
