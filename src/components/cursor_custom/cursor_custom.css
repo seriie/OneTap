@@ -6,6 +6,14 @@
     display: none;
 }
 
+.cursor .dot {
+    transition: none !important;
+}
+
+.cursor .dot.active {
+    display: none;
+}
+
 .cursor .circle.active {
     background-color: var(--pseudo);
     filter: opacity(.5);

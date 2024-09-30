@@ -31,10 +31,12 @@ export default function CursorCustom() {
         triggeredHover.forEach(triggeredHover => {
             triggeredHover.addEventListener('mouseenter', function() {
                 circle.classList.add('active');
+                dot.classList.add('active');
             });
 
             triggeredHover.addEventListener('mouseleave', function() {
                 circle.classList.remove('active');
+                dot.classList.remove('active');
             });
         });
         
@@ -46,7 +48,7 @@ export default function CursorCustom() {
     return (
         <>
             <div className='cursor'>
-                <div className='dot absolute top-[50%] left-[50%] pointer-events-none translate-x-[-50%] translate-y-[-50%] z-[1000] transition-all duration-0 ease-linear bg-sky-500 p-[5px] rounded-full'></div>
+                <div className='dot absolute top-[50%] left-[50%] pointer-events-none translate-x-[-50%] translate-y-[-50%] z-[1000] transition-none bg-sky-500 p-[5px] rounded-full'></div>
                 <div className='circle absolute top-[50%] left-[50%] pointer-events-none translate-x-[-50%] translate-y-[-50%] z-[1000] transition-all duration-[100ms] ease-linear border-solid border-sky-500 border-2 p-[30px] rounded-full'></div>
             </div>
         </>

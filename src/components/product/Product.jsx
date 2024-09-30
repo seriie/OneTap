@@ -1,7 +1,7 @@
 export default function Product({ productName, productImage, productDescription, productPrice }) {
     return (
         <>
-        <div id="product" className="products-app mt-[200px] flex flex-wrap justify-center">
+        <div id="product" className="products-app mt-[200px] flex flex-wrap justify-center w-full">
             <div className="product-card cursor-pointer border border-slate-700 rounded-xl p-4 m-4 max-w-xs relative">
                 <img src={productImage} alt={productName} className="w-full h-auto" />
                 <h2 className="product-name text-lg font-semibold mt-4">{productName}</h2>
